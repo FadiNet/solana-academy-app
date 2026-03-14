@@ -1,0 +1,10 @@
+[{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target": {
+    "namespace": "android_app",
+    "package_name": "com.fg924.solana_academy",
+    "sha256_cert_fingerprints": [
+      "B3:E1:1B:AC:4E:CE:C9:B2:49:9C:77:06:83:98:8E:5A:3D:B5:6C:E3:77:61:36:B1:0E:29:C9:C4:1A:A2:51:68"
+    ]
+  }
+}]
