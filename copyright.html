@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Copyright — Solana Academy</title>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=DM+Sans:wght@300;400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --purple: #9945FF;
+    --green: #14F195;
+    --gold: #FFD700;
+    --bg: #0D0D1F;
+    --bg2: #1A0A3A;
+    --text: #E8E8F0;
+    --muted: #8888AA;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'DM Sans', sans-serif;
+    font-size: 16px;
+    line-height: 1.8;
+    min-height: 100vh;
+  }
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background-image:
+      radial-gradient(circle at 80% 20%, rgba(255,215,0,0.04) 0%, transparent 50%),
+      radial-gradient(circle at 20% 80%, rgba(153,69,255,0.05) 0%, transparent 50%);
+    pointer-events: none;
+    z-index: 0;
+  }
+  .wrap {
+    position: relative;
+    z-index: 1;
+    max-width: 780px;
+    margin: 0 auto;
+    padding: 60px 24px 100px;
+  }
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 60px;
+  }
+  .logo-icon {
+    width: 42px; height: 42px;
+    border-radius: 10px;
+    background: var(--bg2);
+    border: 1.5px solid var(--gold);
+    display: flex; align-items: center; justify-content: center;
+    font-family: 'Space Mono', monospace;
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--gold);
+  }
+  .logo-text { font-family: 'Space Mono', monospace; font-size: 14px; color: var(--muted); }
+  .logo-text span { color: var(--purple); }
+  .tag {
+    display: inline-block;
+    background: rgba(255,215,0,0.08);
+    border: 1px solid rgba(255,215,0,0.25);
+    color: var(--gold);
+    font-size: 11px;
+    font-family: 'Space Mono', monospace;
+    letter-spacing: 2px;
+    padding: 4px 12px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+  }
+  h1 {
+    font-size: clamp(32px, 5vw, 52px);
+    font-weight: 700;
+    line-height: 1.15;
+    margin-bottom: 12px;
+    letter-spacing: -1px;
+  }
+  .subtitle {
+    color: var(--muted);
+    font-size: 15px;
+    margin-bottom: 50px;
+    padding-bottom: 50px;
+    border-bottom: 1px solid rgba(255,215,0,0.1);
+  }
+  .subtitle strong { color: var(--gold); font-weight: 500; }
+  .section { margin-bottom: 48px; }
+  h2 {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--gold);
+    margin-bottom: 14px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  h2::before {
+    content: '';
+    display: block;
+    width: 4px; height: 20px;
+    background: var(--gold);
+    border-radius: 2px;
+    flex-shrink: 0;
+  }
+  p { color: #AAAACC; margin-bottom: 12px; }
+  ul { list-style: none; padding: 0; }
+  ul li {
+    color: #AAAACC;
+    padding: 6px 0 6px 20px;
+    position: relative;
+  }
+  ul li::before {
+    content: '◎';
+    position: absolute;
+    left: 0;
+    color: var(--gold);
+    font-size: 10px;
+    top: 9px;
+  }
+  .card {
+    background: var(--bg2);
+    border: 1px solid rgba(255,215,0,0.15);
+    border-radius: 14px;
+    padding: 24px 28px;
+    margin: 20px 0;
+  }
+  .card p { margin: 0; }
+  .notice-box {
+    background: rgba(255,215,0,0.04);
+    border: 1px solid rgba(255,215,0,0.2);
+    border-radius: 14px;
+    padding: 28px;
+    font-family: 'Space Mono', monospace;
+    font-size: 14px;
+    color: var(--gold);
+    line-height: 2;
+    text-align: center;
+  }
+  footer {
+    margin-top: 80px;
+    padding-top: 30px;
+    border-top: 1px solid rgba(255,255,255,0.06);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+  footer p { color: var(--muted); font-size: 13px; margin: 0; }
+  .nav-links { display: flex; gap: 20px; flex-wrap: wrap; }
+  .nav-links a {
+    color: var(--muted);
+    font-size: 13px;
+    text-decoration: none;
+  }
+  .nav-links a:hover { color: var(--green); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="logo">
+    <div class="logo-icon">©</div>
+    <div class="logo-text"><span>Solana</span> Academy</div>
+  </div>
+
+  <div class="tag">Legal</div>
+  <h1>Copyright Notice</h1>
+  <p class="subtitle">Last updated: <strong>March 2026</strong> — All intellectual property rights reserved.</p>
+
+  <div class="section">
+    <div class="notice-box">
+      © 2026 Solana Academy. All Rights Reserved.
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>Ownership</h2>
+    <p>All content within Solana Academy — including but not limited to text, graphics, logos, icons, quiz questions, course materials, NFT badge designs, and software — is the exclusive property of Solana Academy and is protected by applicable intellectual property laws.</p>
+  </div>
+
+  <div class="section">
+    <h2>Protected Content</h2>
+    <ul>
+      <li>App design, UI, and user experience</li>
+      <li>All 150+ quiz questions and educational content</li>
+      <li>NFT badge artwork and metadata</li>
+      <li>Solana Academy logo, name, and branding</li>
+      <li>App source code and architecture</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>Permitted Use</h2>
+    <p>Users may access and use the application for personal, non-commercial educational purposes. Screenshots for personal use or non-commercial sharing that credit Solana Academy are permitted.</p>
+  </div>
+
+  <div class="section">
+    <h2>Prohibited Actions</h2>
+    <ul>
+      <li>Reproducing or distributing app content without written permission</li>
+      <li>Using the Solana Academy name or logo without authorization</li>
+      <li>Creating derivative works based on our content</li>
+      <li>Claiming ownership of NFT badge artwork designs</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>NFT Digital Assets</h2>
+    <div class="card">
+      <p>NFT badges minted through the app are owned by the wallet holder. However, the underlying artwork, design, and metadata of all NFT badges remain the copyright of Solana Academy. Ownership of an NFT does not transfer copyright of the associated artwork.</p>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>DMCA & Infringement</h2>
+    <p>If you believe any content infringes on your copyright, please contact us immediately with full details of the claim.</p>
+    <div class="card">
+      <p>Copyright claims: <strong style="color: var(--gold);">fadinet@gmail.com</strong></p>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2026 Solana Academy. All rights reserved.</p>
+    <div class="nav-links">
+      <a href="./privacy">Privacy Policy</a>
+      <a href="./license">License</a>
+      <a href="./copyright">Copyright</a>
+    </div>
+  </footer>
+</div>
+</body>
+</html>
